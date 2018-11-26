@@ -14,29 +14,5 @@ function animate($slides){
     $slides.css('animation-duration', slidesLength*2+'s');
   }
 }
-$(document).ready(function() {
-    $('#myCarousel').carousel({
-    interval: 1000,
-      wrap: false
-    })
 
-    $('#myCarousel').on('slid.bs.carousel', function() {
-        //alert("slid");
-    });
-
-
-  $('#myCarousel').on('slid.bs.carousel', '', function() {
-      var $this = $(this);
-
-      $this.children('.carousel-control').show();
-
-      if($('.carousel-inner .item:first').hasClass('active')) {
-        $this.children('.left.carousel-control').hide();
-      } else if($('.carousel-inner .item:last').hasClass('active')) {
-        $this.children('.right.carousel-control').hide();
-      }
-
-    }); 
-
-});
 

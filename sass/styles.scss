@@ -231,11 +231,11 @@ h1, h2, h3 {
    
   }
   .panel-2{
-    border-left: 1px solid #BBBABF;
+    border-left: 3px solid greenyellow;
     padding-left: 60px;
   }
   .panel-3{
-    border-left: 1px solid #BBBABF;
+    border-left: 3px solid greenyellow;
     padding-left: 40px;
   }
   .panel-1 {
@@ -323,17 +323,69 @@ h1, h2, h3 {
     background-attachment: fixed;
     height: 50vh;
     display: inline;
+    .contact1{
+      display: inline-flex;
+    }
     h1{
       text-align: center;
       font-size: 40px;
       color: #BBBABF;
     }
-    ul{
-      list-style-type: none;
+    span{
+      display: inline;
     }
-    li{
-      display:inline;
-      padding: 30px;
+    a{
+      display: inline;
+      white-space: nowrap;
+      margin-left:100%;
+      background: none;
+      color: grey;
+      border-radius: 100%;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      position: relative;
+      width: 40px;
+      height: 28px;
+      padding-top: 1px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      transition: all .5s;
+    }
+ 
+    
+    a span{
+      display: inline;
+      margin-left:100%;
+      color: grey;
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      left: -25px;
+      right: -25px;
+      padding: 40px 1px;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+    }
+    
+   
+    a:hover span{
+      margin-left:5%;
+      display: inline;
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    /* hover over the icons now to see the tooltips! */
+   
+    img{
+      display: inline;
+      margin-left:100%;
+      width:90px;
+      padding-left:40px;
     }
     .icon1{
       list-style-type: none;
@@ -343,7 +395,7 @@ h1, h2, h3 {
     .icon1:hover{
       -ms-transform: scale(1.5); /* IE 9 */
       -webkit-transform: scale(1.5); /* Safari 3-8 */
-      transform: scale(1.2); 
+      transform: scale(1.7); 
     }
   }
 

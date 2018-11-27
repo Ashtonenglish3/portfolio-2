@@ -56,6 +56,50 @@
       color: black;
       background-color: #BBBABF;
     }
+    .intro-text {
+      display: flex;
+      grid-template-columns: auto;
+      padding: 10px 0;
+      background-color:#BCBCBC;
+    
+     
+    
+      h2 {
+        font-size: 40px;
+        padding: 90px 100px;
+        
+      }
+    
+     
+    
+      p {
+        
+        font-size: 20px;
+        justify-content: right;
+        padding:  90px;    
+      }
+    
+      p span{
+        color: $secondary-color;
+        font-weight: bold;
+      }
+      .column#zoomIn img {
+        padding: 30px;
+        width:300px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        border-radius: 17%;
+      }
+      .column#zoomIn:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+      }
+      
+    }
+    
+    
     
     @mixin panel-default() {
       width: 300px;
@@ -86,6 +130,7 @@
 @media screen and (max-width: 640px){
   .header-text .secondary-button{
     margin: 10px;
+    margin-left: 50%;
   }
 
   .header-text {

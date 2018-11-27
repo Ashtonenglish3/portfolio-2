@@ -322,6 +322,29 @@ h1, h2, h3 {
     background-position: center;
     background-attachment: fixed;
     height: 50vh;
+    display: inline;
+    h1{
+      text-align: center;
+      font-size: 40px;
+      color: #BBBABF;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+      display:inline;
+      padding: 30px;
+    }
+    .icon1{
+      list-style-type: none;
+      display:inline;
+     
+    }
+    .icon1:hover{
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.2); 
+    }
   }
 
 
@@ -423,6 +446,15 @@ h1, h2, h3 {
     font-weight:800;
     letter-spacing: -.01em;
     color:#00509A;
+  }
+  footer{
+    li img{
+      img:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5); 
+      }
+    }
   }
   
   @import 'responsive';

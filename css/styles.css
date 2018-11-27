@@ -232,7 +232,26 @@ h1, h2, h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 50vh; }
+  height: 50vh;
+  display: inline; }
+  .footer h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #BBBABF; }
+  .footer ul {
+    list-style-type: none; }
+  .footer li {
+    display: inline;
+    padding: 30px; }
+  .footer .icon1 {
+    list-style-type: none;
+    display: inline; }
+  .footer .icon1:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.2); }
 
 /* The Modal (background) */
 .modal {
@@ -330,6 +349,13 @@ body, html {
   letter-spacing: -.01em;
   color: #00509A; }
 
+footer li img img:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5); }
+
 @media screen and (max-width: 1080px) {
   .container {
     display: grid;
@@ -384,6 +410,33 @@ body, html {
     color: black;
     background-color: #BBBABF; }
 
+  .intro-text {
+    display: flex;
+    grid-template-columns: auto;
+    padding: 10px 0;
+    background-color: #BCBCBC; }
+    .intro-text h2 {
+      font-size: 40px;
+      padding: 90px 100px; }
+    .intro-text p {
+      font-size: 20px;
+      justify-content: right;
+      padding: 90px; }
+    .intro-text p span {
+      color: #AC8C63;
+      font-weight: bold; }
+    .intro-text .column#zoomIn img {
+      padding: 30px;
+      width: 300px;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      border-radius: 17%; }
+    .intro-text .column#zoomIn:hover img {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3); }
+
   .plans {
     display: grid;
     grid-template-columns: auto;
@@ -402,7 +455,8 @@ body, html {
       width: inherit; } }
 @media screen and (max-width: 640px) {
   .header-text .secondary-button {
-    margin: 10px; }
+    margin: 10px;
+    margin-left: 50%; }
 
   .header-text {
     text-align: center;

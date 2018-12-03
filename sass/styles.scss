@@ -240,7 +240,7 @@ h1, h2, h3 {
   .container4{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: 	#BBBABF;
+    background-color: 	#FFFFFF;
     grid-column-gap: 80px;
     padding: 30px;
     justify-content: center;
@@ -328,7 +328,7 @@ h1, h2, h3 {
     }
   }
   .footer {
-    background-image: url('../img/com.jpg');
+    background-color: #F6F6F6;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

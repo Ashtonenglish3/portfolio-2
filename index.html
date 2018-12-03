@@ -9,13 +9,13 @@
     <!--Activity -  Link the css file inside the href quotation marks below -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-    <title>Make it live</title>
+    <title>Ashton English</title>
 </head>
 
 <body>
-    <div id='cssmenu'>
         <nav>
             <ul>
                 <li><a href='#'><span>Home</span></a></li>
@@ -24,7 +24,7 @@
                 <li><a href='#Contact'>Contact</a></li>
             </ul>
         </nav>
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
     <div class="container">
         <div class="header">
             <div class="header-text">
@@ -39,10 +39,10 @@
         </div>
 
 
-        <div class="intro-section">
+        <div class="container2">
             <div></div>
 
-            <div class="intro-text">
+            <div class="container2-text">
 
                 <h2 id="About">About</h2>
 
@@ -71,10 +71,17 @@
 
             <div></div>
         </div>
-
-
-        <!-- Creates a "parallax" effect -->
-        <div class="parallax-section">
+        <div class="container5">
+            <div><h1>Projects</h1></div>
+            
+            <div class="sub-section">
+                <div><h2>Jon Chretien</h2><img src="img/jon.png" class="hover-image" style="max-width:720px"; alt=""></div>
+                <div><h2>Code4CT</h2><img src="img/code.png" style="max-width:720px"; alt=""><div class="middle">
+                        <div class="text">John Doe</div>
+                      </div></div>       
+            </div>
+        </div>
+        <div class="container3">
             <h1>Skills</h1>
             <div class="wrap">
                 <div class="slide-container">
@@ -99,7 +106,7 @@
             </div>
         </div>
 
-        <div class="plans">
+        <div class="container4">
             <div class="panel">
                 <h1 id="Education">Education</h1>
             </div>
@@ -130,6 +137,7 @@
 
         <div class="footer">
             <h1 id="Contact">Contact</h1>
+            <p>~hover over these~</p>
             <div class="contact1">
                 <a href="https://www.facebook.com/ashton.english.54" class="icon facebook">
                     <span>Facebook</span><img src="img/facebook.png" class="icon1" alt=""></a>
@@ -143,25 +151,27 @@
                     <span>ashtonenglish3@gmail.com</span><img src="img/email.png" class="icon1" alt=""></a>
             </div>
         </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-
-            <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <img src="https://i.pinimg.com/736x/4f/54/29/4f5429df5ea6361fa8d3f08dfcdccdf9--programmer-humor-computer-engineering.jpg"
-                    alt="programmer-humor-computer-engineering.jpg">
-
-                <img src="http://devhumor.com/content/uploads/images/May2018/meaningful_variable_name.jpg" alt="when-you-try-to-choose-a-meaningful-variable-name">
-                <img src="http://devhumor.com/content/uploads/images/May2018/comment.jpg" alt="i-just-don-t-like-it">
-            </div>
-        </div>
+       
     </div>
-
-    <!-- Activity - Link the javascript file inside the src quotation marks below -->
-    <script src="js/main.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
 </body>
 
 </html>

@@ -66,16 +66,13 @@ nav {
         padding: 10px;
      } 
       a {
-        background: -webkit-linear-gradient(black, grey);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      
         color: black;
         text-decoration: none;
         padding: 50px;
-      span{
-        color:greenyellow;
-        
-      }
+       text-shadow: 1px 1px #aaa;
+  
+      
       }
     }
   }
@@ -115,7 +112,7 @@ h1, h2, h3 {
 
 // Hero Image
 .header {
-    background-image: url('../img/com.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/coding.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -128,14 +125,14 @@ h1, h2, h3 {
     overflow: hidden;
   
     h1 {
-      color:#BBBABF;
+      color:black;
       padding: 0;
       font-size: 50px;
       text-shadow: 3px #BBBABF;
     }
 
     p {
-      color:#BBBABF;
+      color:black;
       padding: 0;
       margin-top: -25px;
       font-size: 25px;
@@ -146,7 +143,7 @@ h1, h2, h3 {
 
     }
     a{
-     color:#aaa;
+     color:black;
      text-decoration: none;
     }
   }
@@ -311,7 +308,7 @@ h1, h2, h3 {
 
 /**************parallax-section****************/
   .container3 {
-    background-image: url('../img/key.jpg');
+    background-image: url('../img/coding.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -320,7 +317,7 @@ h1, h2, h3 {
     h1{
       text-align: center;
       font-size: 40px;
-      color: #BBBABF;
+      color: Black;
     }
     img{
         padding: 0;

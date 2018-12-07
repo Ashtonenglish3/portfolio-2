@@ -1,7 +1,7 @@
 //change font of text throughout the page
 *{
   font-family: 'Orbitron', sans-serif;
-
+  word-spacing:3px;
  
 }
 
@@ -128,7 +128,7 @@ html{
     padding: 50px;
     padding-top: 125px;
     
-    background: #ededed;
+    background: $background;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -160,7 +160,7 @@ html{
   }
   // styling image cover of page
   .header {
-    background-image:  url("../img/rotate.jpg");
+    background-image:  url("../img/rotate2.jpg");
     background-size: cover;
     background-attachment: scroll;
     height: 100vh;
@@ -179,7 +179,7 @@ html{
       font-size: 5em;
       text-shadow: 3px #BBBABF;
       margin: 0;
-      whitespace:no
+      white-space:nowrap;
     }
     
 
@@ -187,7 +187,7 @@ html{
       color:$textcolor;
       padding: 0;
       
-      margin-top: -25px;
+      margin-top: -2px;
       font-size: 1em;
     }
     span{
@@ -231,7 +231,8 @@ html{
       font-size: 18px;
       justify-content: right;
       padding:  80px;  
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Orbitron', sans-serif;
+      word-spacing: 3px;
 
     }
   
@@ -268,14 +269,12 @@ html{
     
       h1{
           font-family: Faster One;
-          background: -webkit-linear-gradient(grey, #333);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: #333;
+         
       }
       h2{
-        background: -webkit-linear-gradient(grey, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+       color: #333;
+        
       }
     }
     .panel{
@@ -335,7 +334,7 @@ html{
   
   /**************parallax-section****************/
     .container3 {
-      background-image: url('../img/bloom.jpg');
+      background-image: url('../img/spider.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -354,7 +353,7 @@ html{
 
     /*******************styling of footer********************/
     .footer {
-      background-color: $background;
+      background-color:$second-background;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;

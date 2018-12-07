@@ -2,12 +2,16 @@
 
 $black : black;
 $darkgrey: #484848;
-$white: white;
+$darkblue: #2C3952;
 $lightgrey: #aaa;
+$white:white;
+$blue:#2B3347;
 
 // functional color
 
-$background: $white;
+$background: $darkblue;
+$second-background:$white;
+$third-background:$blue;
 $textcolor:$black;
 $headings:$darkgrey;
 $textcolor:$lightgrey;

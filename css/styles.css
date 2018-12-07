@@ -7,12 +7,12 @@
   display: flex;
   grid-template-columns: auto;
   padding: 10px 0;
-  background-color: white; }
+  background-color: #2C3952; }
 
 .container4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: white;
+  background-color: #2C3952;
   grid-column-gap: 80px;
   padding: 30px;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 .container5 {
   display: grid;
-  background-color: #f6f6f6;
+  background-color: #2B3347;
   grid-column-gap: 80px;
   padding: 30px;
   justify-content: center;
@@ -51,7 +51,8 @@
   overflow: hidden; }
 
 * {
-  font-family: 'Orbitron', sans-serif; }
+  font-family: 'Orbitron', sans-serif;
+  word-spacing: 3px; }
 
 html {
   scroll-behavior: smooth;
@@ -69,7 +70,7 @@ a {
   transition: color 0.3s ease; }
 
 a:hover {
-  color: white; }
+  color: #2C3952; }
 
 nav {
   overflow: visible;
@@ -128,7 +129,7 @@ nav {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #2C3952;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -150,7 +151,7 @@ h1, h2, h3 {
   font-family: 'Orbitron', sans-serif; }
 
 .header {
-  background-image: url("../img/rotate.jpg");
+  background-image: url("../img/rotate2.jpg");
   background-size: cover;
   background-attachment: scroll;
   height: 100vh;
@@ -166,11 +167,11 @@ h1, h2, h3 {
     font-size: 5em;
     text-shadow: 3px #BBBABF;
     margin: 0;
-    whitespace: no; }
+    white-space: nowrap; }
   .header p {
     color: #aaa;
     padding: 0;
-    margin-top: -25px;
+    margin-top: -2px;
     font-size: 1em; }
   .header span {
     color: #AC8C63;
@@ -198,7 +199,8 @@ h1, h2, h3 {
   font-size: 18px;
   justify-content: right;
   padding: 80px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Orbitron', sans-serif;
+  word-spacing: 3px; }
 .container2-text p span {
   color: #AC8C63;
   font-weight: bold; }
@@ -217,13 +219,9 @@ h1, h2, h3 {
 
 .container4 h1 {
   font-family: Faster One;
-  background: -webkit-linear-gradient(grey, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  color: #333; }
 .container4 h2 {
-  background: -webkit-linear-gradient(grey, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  color: #333; }
 
 .panel {
   justify-content: center;
@@ -273,7 +271,7 @@ h1, h2, h3 {
 
 /**************parallax-section****************/
 .container3 {
-  background-image: url("../img/bloom.jpg");
+  background-image: url("../img/spider.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -303,7 +301,7 @@ h1, h2, h3 {
   .footer p {
     text-align: center;
     color: #BBBABF;
-    background: -webkit-linear-gradient(white, #333);
+    background: -webkit-linear-gradient(#2C3952, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .footer span {
@@ -466,19 +464,19 @@ footer li img img:hover {
   .header-text {
     position: absolute;
     white-space: nowrwap;
-    top: 25%;
+    top: 40%;
     left: 60%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #2C3952;
     padding: 5px 0; } }
 @media screen and (max-width: 1114px) {
   .header-text {
     position: absolute;
     white-space: nowrwap;
-    top: 28%;
+    top: 90%;
     left: 65%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #2C3952;
     padding: 5px 0; } }
 @media screen and (max-width: 1080px) {
   nav {
@@ -620,7 +618,7 @@ footer li img img:hover {
 
   .header {
     height: 150vh;
-    background-image: url("../img/apple.jpg"); }
+    background-image: url("../img/rotate2.jpg"); }
     .header h1 {
       font-size: 5em;
       white-space: nowrap;
@@ -637,8 +635,8 @@ footer li img img:hover {
       top: 30%;
       left: 55%;
       transform: translate(-50%, -50%);
-      color: white;
-      padding: 5px 0;
+      color: #2C3952;
+      padding: 20px;
       margin: 30%; }
     .header .header-text .secondary-button {
       position: absolute;
@@ -662,7 +660,7 @@ footer li img img:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 1px 0;
-    background-color: white; }
+    background-color: #2C3952; }
     .container2-text .container2 h2 {
       color: red; }
 
@@ -777,7 +775,7 @@ footer li img img:hover {
   .container4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: white;
+    background-color: #2C3952;
     grid-column-gap: 80px;
     padding: 30px;
     justify-content: center;
@@ -998,7 +996,7 @@ footer li img img:hover {
       top: -30%;
       left: 45%;
       transform: translate(-50%, -50%);
-      color: white;
+      color: #2C3952;
       padding: 5px 0;
       margin: 30%; }
     .header .header-text .secondary-button {
@@ -1022,7 +1020,7 @@ footer li img img:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 1px 0;
-    background-color: white; }
+    background-color: #2C3952; }
     .container2-text .container2 h2 {
       color: red; }
 

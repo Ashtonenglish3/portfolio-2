@@ -1,0 +1,506 @@
+//change font of text throughout the page
+*{
+  font-family:"poppins"
+}
+
+html{
+    scroll-behavior: smooth;//make scrolling smooth
+    margin:0;
+  }
+  
+  
+  @mixin button($button-text-color, $button-bg-color , $border-color) {
+    border: none;
+    outline: 0;
+  
+    padding: 20px 30px;
+    color: #BBBABF;
+    border: 2px solid #BBBABF;
+    border-radius: 3px;
+    background-color:  $button-bg-color;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  
+ 
+  /** HEADER */
+  
+  /** NAVIGATION BAR */
+  a{
+    text-decoration: none;
+    color: $textcolor;
+    
+    transition: color 0.3s ease;
+  }
+  
+  a:hover
+  {
+    color: $background;
+  }
+  
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 2;
+    
+    -webkit-touch-callout: none;
+  }
+  // Styling of the nav menu
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: grey;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  // styling the size of the menu
+  #menu
+  {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+ 
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  // styling image cover of page
+  .header {
+    background-image:  url("../img/white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 100vh;
+   
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+   
+  
+    h1 {
+      color:$textcolor;
+      padding: 0;
+      font-size: 50px;
+      text-shadow: 3px #BBBABF;
+    }
+
+    p {
+      color:$textcolor;
+      padding: 0;
+      margin-top: -25px;
+      font-size: 25px;
+    }
+    span{
+      color: $secondary-color;
+      text-shadow: rgb(0, 0, 0) 3px;
+
+    }
+    a{
+     color:$textcolor;
+     text-decoration: none;
+    }
+  }
+   //positioning of text
+  .header-text {
+    
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $background-color;
+    padding: 5px 0;
+  }
+  
+// container2 section
+
+.container2-text {
+
+
+    h2 {
+      font-size: 40px;
+      padding: 90px 100px;
+      background: -webkit-linear-gradient(grey, $textcolor);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+   
+  
+    p {
+      font-size: 18px;
+      justify-content: right;
+      padding:  80px;  
+      font-family:poppins;  
+    }
+  
+    p span{
+      color: $secondary-color;
+      font-weight: bold;
+    }
+    //zoom in effect on image once hover
+    .column#zoomIn img {
+      margin-top: 70px;
+      padding: 30px;
+      max-width:300px;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      border-radius: 17%;
+      
+    }
+    .column#zoomIn:hover img {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    
+  }
+  @mixin panel-default() {
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  //container4 section
+    .container4{
+    
+      h1{
+          font-family: Faster One;
+          background: -webkit-linear-gradient(grey, #333);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+      h2{
+        background: -webkit-linear-gradient(grey, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .panel{
+      justify-content: center;
+      margin-top:60px;
+      margin-bottom: 0px;
+      padding:0px;
+     
+    }
+    .panel-1{
+      background-color:grey;
+      padding:40px;
+    }
+    .panel-2{
+      border-left: 3px solid grey;
+      padding: 40px;
+      background-color:grey;
+    }
+    .panel-3{
+      border-left: 3px solid grey;
+      padding: 40px;
+      background-color:grey;
+    }
+    
+  
+      .panel-image {
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        height: 320px;
+        width: inherit;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .panel-image:hover {
+        background-size: 90%;
+      }
+  
+      
+      .panel-text {
+        color: #BBBABF;
+        font-weight: bold;
+        margin: auto;
+        width: 50%;
+        border-top: 3px solid #BBBABF * 1.2;      
+      }
+   
+  
+  .image1{
+    display: inline-block;
+    vertical-align: top;
+    width:500px;
+    padding: 10px;
+    border-bottom: 3px solid #BBBABF * 1.2;
+  }
+  
+  
+  /**************parallax-section****************/
+    .container3 {
+      background-image: url('../img/bloom.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 60vh;
+     
+      h1{
+        text-align: center;
+        font-size: 40px;
+        color: $textcolor;
+      }
+      img{
+          padding: 0;
+        max-width:50%;
+      }
+    }
+
+    /*******************styling of footer********************/
+    .footer {
+      background-color: $background;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 50vh;
+      display: inline;
+      .contact1{
+        display: inline-flex;
+      }
+      h1{
+        text-align: center;
+        font-size: 40px;
+        color: grey;
+      }
+      p{
+        text-align: center;
+        color: #BBBABF;
+        background: -webkit-linear-gradient($background, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+      }
+  
+      span{
+        display: inline;
+      }
+      a{
+        display: inline;
+        white-space: nowrap;
+        margin-left:100%;
+        background: none;
+        color: grey;
+        border-radius: 100%;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        width: 40px;
+        height: 28px;
+        padding-top: 60px;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+      }
+   
+      
+      a span{
+        display: inline;
+        margin-left:100%;
+        color: grey;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        left: -25px;
+        right: -25px;
+        padding: 70px 1px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+      }
+      
+     //hover effect that makes text pop up styling
+      a:hover span{
+        margin-left:5%;
+        display: inline;
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      
+     //making images inline with one another
+      img{
+        display: inline;
+        margin-left:100%;
+        width:90px;
+        padding-left:40px;
+      }
+      .icon1{
+        list-style-type: none;
+        display:inline;
+       
+      }
+      .icon1:hover{
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5); 
+        transform: scale(1.7); 
+      }
+    }
+
+    .container5{
+    
+    .sub-section{
+      
+      h2{
+        color:grey;
+      }
+    }
+      h1{
+        color:$headings;
+        border-bottom:5px solid grey;
+        width:40px;
+      }
+      
+    }
+  
+  
+  
+  
+    
+    .slide-container{
+      position:absolute;
+      left:248px;
+      height:100%;
+      bottom: 30%;
+    }
+    
+    .slides{
+      display:flex;
+      flex:row;
+      flex-wrap:no-wrap;
+      height:100%;
+      margin:0;
+      padding:0;
+    }
+    
+
+  
+    .slides li{
+      display: block;
+      box-sizing:border-box;
+      width:14vw;
+      height:50%;
+      align-items: center;
+      justify-content: center;
+      text-align:center;
+    }
+    
+    .slides li > div{
+      display:flex;
+      padding:0;
+      margin:0;
+      box-sizing:border-box;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-align:center;
+      justify-content: center;
+      align-self: center;
+    }
+    
+    .slides li span{
+      display:block;
+      font-size:10vh;
+      line-height:100vh;
+      font-weight:800;
+      letter-spacing: -.01em;
+      color:#00509A;
+    }
+    //footer
+    footer{
+      //image hovering effects
+      li img{
+        img:hover{
+          -ms-transform: scale(1.5); 
+          -webkit-transform: scale(1.5);
+          transform: scale(1.5); 
+        }
+      }
+    }
+    
+  
+    

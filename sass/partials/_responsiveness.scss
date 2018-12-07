@@ -692,7 +692,7 @@
    transform: none;
  }
 .header{
-  height:150vh;
+  height:200vh;
       background-image:  url("../img/white.jpg");
   h1{
     font-size:3em;
@@ -711,7 +711,7 @@
   .header-text {
     
     position: absolute;
-    top: -14%;
+    top: -30%;
     left: 45%;
     transform: translate(-50%, -50%);
     color: $background;

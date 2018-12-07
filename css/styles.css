@@ -51,10 +51,14 @@
   overflow: hidden; }
 
 * {
-  font-family: "poppins"; }
+  font-family: 'Orbitron', sans-serif; }
 
 html {
   scroll-behavior: smooth;
+  margin: 0; }
+
+body {
+  left: 0;
   margin: 0; }
 
 /** HEADER */
@@ -66,6 +70,15 @@ a {
 
 a:hover {
   color: white; }
+
+nav {
+  overflow: visible;
+  background-color: transparent;
+  transition: background-color 1s ease 0s;
+  position: fixed;
+  top: 78px;
+  width: 169%;
+  z-index: 1; }
 
 #menuToggle input {
   display: block;
@@ -134,27 +147,31 @@ a:hover {
   transform: none; }
 
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Orbitron', sans-serif; }
 
 .header {
-  background-image: url("../img/white.jpg");
+  background-image: url("../img/rotate.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: scroll;
   height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
   flex-direction: column;
   justify-content: left;
-  align-items: left; }
+  align-items: left;
+  left: 0; }
   .header h1 {
     color: #aaa;
     padding: 0;
-    font-size: 50px;
-    text-shadow: 3px #BBBABF; }
+    font-size: 5em;
+    text-shadow: 3px #BBBABF;
+    margin: 0;
+    whitespace: no; }
   .header p {
     color: #aaa;
     padding: 0;
     margin-top: -25px;
-    font-size: 25px; }
+    font-size: 1em; }
   .header span {
     color: #AC8C63;
     text-shadow: black 3px; }
@@ -164,11 +181,12 @@ h1, h2, h3 {
 
 .header-text {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #BBBABF;
-  padding: 5px 0; }
+  padding: 50px;
+  border: 1px solid #aaa; }
 
 .container2-text h2 {
   font-size: 40px;
@@ -180,7 +198,7 @@ h1, h2, h3 {
   font-size: 18px;
   justify-content: right;
   padding: 80px;
-  font-family: poppins; }
+  font-family: 'Roboto', sans-serif; }
 .container2-text p span {
   color: #AC8C63;
   font-weight: bold; }
@@ -963,7 +981,7 @@ footer li img img:hover {
     transform: none; }
 
   .header {
-    height: 150vh;
+    height: 200vh;
     background-image: url("../img/white.jpg"); }
     .header h1 {
       font-size: 3em;
@@ -977,7 +995,7 @@ footer li img img:hover {
       text-align: center; }
     .header .header-text {
       position: absolute;
-      top: -14%;
+      top: -30%;
       left: 45%;
       transform: translate(-50%, -50%);
       color: white;

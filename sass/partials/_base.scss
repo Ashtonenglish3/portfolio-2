@@ -1,10 +1,17 @@
 //change font of text throughout the page
 *{
-  font-family:"poppins"
+  font-family: 'Orbitron', sans-serif;
+
+ 
 }
 
 html{
     scroll-behavior: smooth;//make scrolling smooth
+    margin:0;
+    // left:0;
+  }
+  body{
+    left:0;
     margin:0;
   }
   
@@ -38,6 +45,15 @@ html{
   {
     color: $background;
   }
+  nav {
+    overflow: visible;
+    background-color: transparent;
+    transition: background-color 1s ease 0s;
+    position: fixed;
+    top: 78px;
+    width: 169%;
+    z-index: 1;
+}
   
   #menuToggle input
   {
@@ -139,34 +155,40 @@ html{
  
   
   h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    
   }
   // styling image cover of page
   .header {
-    background-image:  url("../img/white.jpg");
+    background-image:  url("../img/rotate.jpg");
     background-size: cover;
-    background-position: center;
     background-attachment: scroll;
     height: 100vh;
-   
+    display: grid;
+    grid-template-columns: auto;
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    left:0;
     
    
   
     h1 {
       color:$textcolor;
       padding: 0;
-      font-size: 50px;
+      font-size: 5em;
       text-shadow: 3px #BBBABF;
+      margin: 0;
+      whitespace:no
     }
+    
 
     p {
       color:$textcolor;
       padding: 0;
+      
       margin-top: -25px;
-      font-size: 25px;
+      font-size: 1em;
     }
     span{
       color: $secondary-color;
@@ -182,11 +204,12 @@ html{
   .header-text {
     
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: $background-color;
-    padding: 5px 0;
+    padding: 50px   ;
+    border: 1px solid #aaa;
   }
   
 // container2 section
@@ -208,7 +231,8 @@ html{
       font-size: 18px;
       justify-content: right;
       padding:  80px;  
-      font-family:poppins;  
+      font-family: 'Roboto', sans-serif;
+
     }
   
     p span{

@@ -70,7 +70,7 @@ a {
   transition: color 0.3s ease; }
 
 a:hover {
-  color: #2C3952; }
+  color: white; }
 
 nav {
   overflow: visible;

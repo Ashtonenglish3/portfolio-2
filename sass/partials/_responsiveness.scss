@@ -1,13 +1,14 @@
 @media screen and (max-width: 1323px){
+  //positioning of text
   .header-text {
     
     position: absolute;
-    white-space:nowrwap;
-    top: 40%;
-    left: 60%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: $background;
-    padding: 5px 0;
+    color: $background-color;
+    padding: 50px   ;
+    border: 1px solid #aaa;
   }
 }
 
@@ -15,12 +16,12 @@
   .header-text {
     
     position: absolute;
-    white-space:nowrwap;
-    top: 90%;
-    left: 65%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: $background;
-    padding: 5px 0;
+    color: $background-color;
+    padding: 50px   ;
+    border: 1px solid #aaa;
   }
 }
 
@@ -61,12 +62,12 @@
 .header-text {
     
   position: absolute;
-  white-space:nowrwap;
-  top: 25%;
-  left: 70%;
+  top: 47%;
+  left: 81%;
   transform: translate(-50%, -50%);
-  color: white;
-  padding: 5px 0;
+  color: $background-color;
+  padding: 156px   ;
+  border: 1px solid #aaa;
   h1{
     white-space:nowrwap;
   }
@@ -248,6 +249,10 @@
     margin: 30%;
   }
   
+  .image-s{
+    width: 90px;
+    margin-left: 77%;
+  }
 
 .header-text .secondary-button {
    position:absolute;

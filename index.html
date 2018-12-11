@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron|Roboto" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
   <title>Ashton English</title>
@@ -32,6 +34,12 @@
         <a href="#About">
           <li>About</li>
         </a>
+        <a href="#Projects">
+          <li>Projects</li>
+        </a>
+        <a href="#Skills">
+          <li>Skills</li>
+        </a>
         <a href="#Education">
           <li>Education</li>
         </a>
@@ -40,18 +48,20 @@
         </a>
       </ul>
     </div>
-    
+
   </nav>
   <!-- back to the top button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-   <!-- Hero image section -->
-  <div class="container">
+  <!-- Hero image section -->
+  <div class="container" id="Home">
     <div class="header">
       <div class="header-text">
+
         <h1>Ashton English</h1>
         <p>Junior Web Developer</p>
-        <button class="secondary-button"><a href="#About">Learn More</a></button>
-        <img src="img/sonic.gif"style="width:90px; margin-left:50%;" alt="">
+        <a href="#About"><button class="secondary-button">Learn More</button></a>
+        <img src="img/sonic.gif" class="image-s" style="width:90px; margin-left:50%;" alt="">
+
       </div>
     </div>
     <!-- container 2 which explains my ABout -->
@@ -60,11 +70,15 @@
       <div class="container2-text">
         <h2 id="About">About</h2>
         <div>
-          <p>I consider myself to be a very positive and hardworking person towards life.Since a young age I have been fixing computer and I found a liking towards technology which lead me towards my passion which is programming.I'm a good at thinking out of the box to solve solution and im a team player.I'm always open to learn new things about the life of technology to grow and improve my skills.
+          <p>I consider myself to be a very positive and hardworking person towards life.Since a young age I have been
+            fixing computer and I found a liking towards technology which lead me towards my passion which is
+            programming.I'm a good at thinking out of the box to solve solution and im a team player.I'm always open to
+            learn new things about the life of technology to grow and improve my skills.
           </p>
         </div>
-         <!-- image of me with a zoom in effect on hover -->
+        <!-- image of me with a zoom in effect on hover -->
         <div class="row">
+
           <a href="#About" class="column col-xs-6" id="zoomIn">
             <figure><img src="img/life.jpg"></figure>
           </a>
@@ -75,7 +89,7 @@
     <!-- container 5 showing the projects ive done -->
     <div class="container5">
       <div>
-        <h1>Projects</h1>
+        <h1 id="Projects">Projects</h1>
       </div>
       <div class="sub-section">
         <div>
@@ -83,13 +97,14 @@
               class="hover-image" style="max-width:720px" ; alt=""></a>
         </div>
         <div>
-          <h2>Code4CT</h2><a href="https://ashtonenglish3.github.io/code4ct/index.html"><img src="img/code.png" style="max-width:720px" ; alt=""></a>
+          <h2>Code4CT</h2><a href="https://ashtonenglish3.github.io/code4ct/index.html"><img src="img/code.png" style="max-width:720px"
+              ; alt=""></a>
         </div>
       </div>
     </div>
     <!-- coontainer 3 -->
     <div class="container3">
-      <h1>Skills</h1>
+      <h1 id="Skills">Skills</h1>
       <div class="wrap">
         <div class="slide-container">
           <ul class="slides">
@@ -106,24 +121,23 @@
               <div class="animate"><span><img src="img/java2.png" class="img-fluid" alt="Responsive image"></span></div>
             </li>
             <li>
-              <div class="animate"><span><img src="img/sass2.png"class="img-fluid" alt="Responsive image"></span></div>
+              <div class="animate"><span><img src="img/sass2.png" class="img-fluid" alt="Responsive image"></span></div>
             </li>
           </ul>
         </div>
       </div>
     </div>
-     <!-- container 4 -->
+    <!-- container 4 -->
     <div class="container4">
       <div class="panel">
         <h1 id="Education">Education</h1>
       </div>
+       <div class="sub-section2">
       <div class="panel-1">
-        <h2>Spine Road High</h2>
-        <p><span>Qualification:</span>Pass Matric</p>
-        <p><span>Years:</span>2013-December-2017</p>
-        <p><span>Subjects:</span>Mathematics Literacy, English Home language,
-          Afrikaans First Additional Language, Life Orientation,
-          Business Studies, Geography, Life Science</p>
+        <h2>Salesian life Choices</h2>
+        <p><span>Course:</span> Front end web development</p>
+        <p><span>Years:</span>September 2018 - February 2019)</p>
+        <p><span>Subjects:</span>Programming, professional development, design thinkinge</p>
       </div>
 
       <div class="panel-2">
@@ -133,24 +147,26 @@
       </div>
 
       <div class="panel-3">
-        <h2>Salesian life Choices</h2>
-        <p><span>Course:</span> Front end web development</p>
-        <p><span>Years:</span>September 2018 - February 2019)</p>
-        <p><span>Subjects:</span>Programming, professional development, design thinkinge</p>
+        <h2>Spine Road High</h2>
+        <p><span>Qualification:</span>Pass Matric</p>
+        <p><span>Years:</span>2013-December-2017</p>
+        <p><span>Subjects:</span>Mathematics Literacy, English Home language,
+          Afrikaans First Additional Language, Life Orientation,
+          Business Studies, Geography, Life Science</p>
       </div>
+    </div>
     </div>
 
 
-     <!-- footer container the means of contacting me with a pop up hovering effect on icons once you hover over it-->
+    <!-- footer container the means of contacting me with a pop up hovering effect on icons once you hover over it-->
     <div class="footer">
       <h1 id="Contact">Contact</h1>
       <div class="contact1">
-        <a href="https://www.facebook.com/ashton.english.54" class="icon facebook">
-          <span>Facebook</span><img src="img/face.png" class="icon1" alt=""></a>
+        <a href="https://www.linkedin.com/in/ashton-english-779285165/" class="icon facebook">
+          <span>Linkdin</span><img src="img/linkdin.png" class="icon1" alt=""></a>
         <a href="https://github.com/Ashtonenglish3" class="icon github">
           <span>GitHub</span><img src="img/github2.png" class="icon1" alt=""></a>
-        <a href=https://www.instagram.com/huncho_ash1/ class="icon dribble">
-          <span>Instagram</span><img src="img/inst.png" class="icon1" alt=""></a>
+
         <a href="http://www.pinterest.com" class="icon pinterest">
           <span>0619124191</span><img src="img/phone2.png" class="icon1" alt=""></a>
         <a href="http://www.pinterest.com" class="icon pinterest">

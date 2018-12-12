@@ -45,3 +45,12 @@ function myFunction() {
     }
 }
 </script> */}
+
+$('.menuToggle').on('click', function () {
+    $('.menu').addClass('open');
+  });
+  
+  $( '.menu a' ).on("click", function(){
+    $('.menu').removeClass('open');
+  });
+  

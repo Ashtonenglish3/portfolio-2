@@ -55,7 +55,7 @@
   <!-- Hero image section -->
   <div class="container" id="Home">
     <div class="header">
-      <div class="header-text">
+     <center><div class="header-text">
 
         <h1>Ashton English</h1>
         <p>Junior Web Developer</p>
@@ -63,19 +63,19 @@
         <img src="img/sonic.gif" class="image-s" style="width:90px; margin-left:50%;" alt="">
 
       </div>
-    </div>
+    </div></center> 
     <!-- container 2 which explains my ABout -->
     <div class="container2">
       <div></div>
       <div class="container2-text">
-          <div class="row">
+        <div class="row">
 
-              <a href="#About" class="column col-xs-6" id="zoomIn">
-                <figure><img src="img/life.jpg"></figure>
-              </a>
-            </div>
-            <div>
-        <h2 id="About">About</h2>
+          <a href="#About" class="column col-xs-6" id="zoomIn">
+            <figure><img src="img/life.jpg"></figure>
+          </a>
+        </div>
+        <div>
+          <h2 id="About">About</h2>
           <p>I consider myself to be a very positive and hardworking person towards life.Since a young age I have been
             fixing computer and I found a liking towards technology which lead me towards my passion which is
             programming.I'm a good at thinking out of the box to solve solution and im a team player.I'm always open to
@@ -83,7 +83,7 @@
           </p>
         </div>
         <!-- image of me with a zoom in effect on hover -->
-        
+
       </div>
       <div></div>
     </div>
@@ -95,10 +95,10 @@
       <div class="sub-section">
         <div>
           <h2>Jon Chretien</h2><a href="https://ashtonenglish3.github.io/jon-chreiten/index.html"><img src="img/jon.png"
-              class="hover-image" style="max-width:720px" ; alt=""></a>
+              class="hover-image" style="max-width:720px;      box-shadow: 10px 10px 5px #2C3952;" ; alt=""></a>
         </div>
         <div>
-          <h2>Code4CT</h2><a href="https://ashtonenglish3.github.io/code4ct/index.html"><img src="img/code.png" style="max-width:720px"
+          <h2>Code4CT</h2><a href="https://ashtonenglish3.github.io/code4ct/index.html"><img src="img/code.png" style="max-width:720px;box-shadow: 10px 10px 5px #2C3952;"
               ; alt=""></a>
         </div>
       </div>
@@ -133,29 +133,29 @@
       <div class="panel">
         <h1 id="Education">Education</h1>
       </div>
-       <div class="sub-section2">
-      <div class="panel-1">
-        <h2>Salesian life Choices</h2>
-        <p><span>Course:</span> Front end web development</p>
-        <p><span>Years:</span>September 2018 - February 2019)</p>
-        <p><span>Subjects:</span>Programming, professional development, design thinkinge</p>
-      </div>
+      <div class="sub-section2">
+        <div class="panel-1">
+          <h2>Salesian life Choices</h2>
+          <p><span>Course:</span> Front end web development</p>
+          <p><span>Years:</span>September 2018 - February 2019)</p>
+          <p><span>Subjects:</span>Programming, professional development, design thinkinge</p>
+        </div>
 
-      <div class="panel-2">
-        <h2>Grow Leadership College</h2>
-        <p><span>Years:</span>19 February 2018-18 November 2018</p>
-        <p><span>Subjects:</span>Leaderhip,Digital Skills</p>
-      </div>
+        <div class="panel-2">
+          <h2>Grow Leadership College</h2>
+          <p><span>Years:</span>19 February 2018-18 November 2018</p>
+          <p><span>Subjects:</span>Leaderhip,Digital Skills</p>
+        </div>
 
-      <div class="panel-3">
-        <h2>Spine Road High</h2>
-        <p><span>Qualification:</span>Pass Matric</p>
-        <p><span>Years:</span>2013-December-2017</p>
-        <p><span>Subjects:</span>Mathematics Literacy, English Home language,
-          Afrikaans First Additional Language, Life Orientation,
-          Business Studies, Geography, Life Science</p>
+        <div class="panel-3">
+          <h2>Spine Road High</h2>
+          <p><span>Qualification:</span>Pass Matric</p>
+          <p><span>Years:</span>2013-December-2017</p>
+          <p><span>Subjects:</span>Mathematics Literacy, English Home language,
+            Afrikaans First Additional Language, Life Orientation,
+            Business Studies, Geography, Life Science</p>
+        </div>
       </div>
-    </div>
     </div>
 
 
@@ -168,14 +168,15 @@
         <a href="https://github.com/Ashtonenglish3" class="icon github">
           <span>GitHub</span><img src="img/github2.png" class="icon1" alt=""></a>
 
-        <a href="http://www.pinterest.com" class="icon pinterest">
+        <a href="" class="">
           <span>0619124191</span><img src="img/phone2.png" class="icon1" alt=""></a>
         <a href="http://www.pinterest.com" class="icon pinterest">
           <span>ashtonenglish3@gmail.com</span><img src="img/mail.png" class="icon1" alt=""></a>
       </div>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
@@ -192,7 +193,13 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
-    }
+    };
+
+    $(document).ready(function () {
+      $("Skills").click(function () {
+        $(this).hide();
+      });
+    });
   </script>
 
 </body>

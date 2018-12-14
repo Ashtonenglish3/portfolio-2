@@ -724,29 +724,29 @@
  }
 .header{
   height:200vh;
-      background-image:  url("../img/white.jpg");
+      background-image:  url("../img/rotate2.jpg");
   h1{
-    font-size:3em;
+    font-size:7em;
     white-space:nowrap;
     text-align:center;
     justify-content:center;
     vertical-align:middle;
   }
   p{
-    font-size:2em;
+    font-size:4em;
 
     white-space:nowrap;
-    text-align:center;
+    text-align:left;
 
   }
   .header-text {
     
     position: absolute;
-    top: -30%;
-    left: 45%;
+    top: 74%;
+    left: 165%;
     transform: translate(-50%, -50%);
     color: $background;
-    padding: 5px 0;
+    padding: 192px;
     margin: 30%;
   }
   
@@ -755,7 +755,7 @@
    position:absolute;
     border: none;
     outline: 0;
-    padding: 14px 122px;
+    padding: 14px 119px;
     color: #BBBABF;
     border: 2px solid #BBBABF;
     border-radius: 3px;
@@ -772,7 +772,7 @@
 }
 .container2-text {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
   padding: 1px 0;
   background-color: $background;
  .container2 h2{
@@ -782,7 +782,7 @@
 .container2 h2{
   font-size: 5em;
   padding: 0px 0px;
-  margin-left:38%;
+  margin-left:10%;
   background: -webkit-linear-gradient(grey,$textcolor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -790,22 +790,23 @@
 .container2-text p {
   font-size: 2em;
   margin: 10px;
-  padding: 0px;
+  padding: 90px;
   font-family: poppins;
-  padding-top: 27%;
+  padding-top: 0%;
 }
 .container2-text .column#zoomIn img {
-  margin-top: -591px;
+  margin-top: 91%;
   max-width: 82vw;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  border-radius: 17%;
+  box-shadow: 10px 10px 5px #2B3347;
+  
 }
 .container5{
   display: grid;
-  background-color: 	#f6f6f6;
+  background-color: $third-background;
   grid-column-gap: 80px;
   padding: 30px;
   justify-content: center;
@@ -817,10 +818,11 @@
   grid-gap:10px;
   h2{
     color:#aaa;
+    font-size:3em;
   }
 }
   h1{
-    font-size:4em;
+    font-size:5em;
     color:#484848;
     border-bottom:10px solid $textcolor;
     width:80px;
@@ -828,7 +830,7 @@
   
 }
 .container3 {
-  background-image: url('../img/coding.jpg');
+  background-image: url('../img/spider.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -841,7 +843,7 @@
   }
   img{
       padding: 0;
-    width:12%;
+    max-width:12%;
   }
   
 
@@ -861,8 +863,8 @@
   
   .slide-container{
     position:absolute;
-    left:400px;
-    height:100%;
+    left:-112px;
+    height:98%;
     bottom: 30%;
   }
   
@@ -870,7 +872,7 @@
     display:flex;
     flex:row;
     flex-wrap:no-wrap;
-    height:100%;
+    height:96%;
     margin:0;
     padding:0;
   }
@@ -883,8 +885,8 @@
   .slides li{
     display: block;
     box-sizing:border-box;
-    width:14vw;
-    height:50%;
+    width:57vw;
+    height:78%;
     align-items: center;
     justify-content: center;
     text-align:center;

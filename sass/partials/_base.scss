@@ -62,7 +62,7 @@ html{
     height: 27px;
     position: absolute;
     top: -2px;
-    left: 4px;
+    left: 35px;
     
     cursor: pointer;
     
@@ -90,6 +90,7 @@ html{
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+                left: 40px;
   }
   
   #menuToggle span:first-child
@@ -107,6 +108,7 @@ html{
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
+    left:35px;
   }
   
   #menuToggle input:checked ~ span:nth-last-child(3)
@@ -214,6 +216,9 @@ html{
     color: $background-color;
     padding: 50px   ;
     border: 1px solid #aaa;
+    .image-s:hover{
+      background-image:url("../img/sonic2.gif");
+    }
   }
   
 // container2 section
@@ -359,6 +364,8 @@ html{
       img{
           padding: 0;
         max-width:50%;
+        border-bottom:7px solid $background;
+        padding-bottom:10%;
       }
     }
 

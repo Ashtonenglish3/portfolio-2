@@ -988,7 +988,7 @@ footer li img img:hover {
   .container2-text {
     display: flex;
     grid-template-columns: auto;
-    padding: 0px 101px;
+    padding: 0px 30px;
     background-color: #2C3952; }
 
   .container2-text h2 {

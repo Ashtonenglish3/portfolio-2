@@ -1043,7 +1043,7 @@ footer li img img:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 143vh; }
+    height: 199vh; }
 
   .container3 h1 {
     text-align: center;
@@ -1093,9 +1093,11 @@ footer li img img:hover {
   .container3 img {
     padding: 0;
     padding-bottom: 0px;
-    max-width: 203%;
+    padding-bottom: 0px;
+    max-width: 51%;
     border-bottom: 7px solid #2C3952;
-    padding-bottom: 10%; } }
+    padding-bottom: 10%;
+    margin-top: 12%; } }
 @media (min-width: 240px) and (max-width: 320px) {
   html,
   body {

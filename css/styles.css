@@ -1036,19 +1036,20 @@ footer li img img:hover {
 
   .container5 .sub-section h2 {
     color: grey;
-    margin-left: 22%;
-    font-size: 1.2em; }
+    margin-left: 36%;
+    font-size: 1.2em;
+    white-space: nowrap; }
 
   .container5 .hover-image {
     max-width: 240px;
     box-shadow: 10px 10px 5px #2C3952;
-    margin-left: 19%; }
+    margin-left: 37%; }
 
   .container5 h1 {
     color: #484848;
     border-bottom: 5px solid grey;
     width: 41px;
-    margin-left: 18%;
+    margin-left: 36%;
     font-size: 1.7em; }
 
   .container3 {

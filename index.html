@@ -14,8 +14,27 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron|Roboto" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
+  <style >
+    div.slide {
+      width:100%;
+      overflow:hidden;
+    }
+    div.slide p {
+      animation: 2s slide-right;
+    }
+    
+    @keyframes slide {
+      from {
+        margin-left: -100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    </style>
   <title>Ashton English</title>
 </head>
 
@@ -61,8 +80,9 @@
         <p>Junior Web Developer</p>
         <a href="#About"><button class="secondary-button">Learn More</button></a>
         <img src="img/sonic.gif" class="image-s"  alt="">
-
+  
       </div>
+      
     </div></center> 
     <!-- container 2 which explains my ABout -->
     <div class="container2">
@@ -169,6 +189,9 @@
       </div>
     </div>
   </div>
+  <div class="slide">
+    <p>Everything is funny, as long as it's happening to somebody else.</p>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
   <script>

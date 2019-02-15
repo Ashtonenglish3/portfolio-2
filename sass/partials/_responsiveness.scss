@@ -765,6 +765,65 @@ display: none;
   margin-left: 2%;
 
 }
+.container3 {
+  background-image: url("../img/spider.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 143vh;
+}
+.container3 h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #aaa;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide-container {
+  position: absolute;
+  left: 113px;
+  height: 100%;
+  bottom: 30%;
+}
+.slides {
+  display: initial;
+  flex: row;
+  flex-wrap: no-wrap;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slides li {
+  display: block;
+  box-sizing: border-box;
+  width: 13vw;
+  height: 23%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.slides li span {
+  display: block;
+  font-size: 0vh;
+  line-height: 100vh;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: #00509A;
+}
+.container3 img {
+  padding: 0;
+      padding-bottom: 0px;
+  max-width: 203%;
+  border-bottom: 7px solid #2C3952;
+  padding-bottom: 10%;
+}
 }
 
 // @media screen and (max-width: 600px) {

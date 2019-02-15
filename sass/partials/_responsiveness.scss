@@ -62,15 +62,13 @@
 
 }
 .container2-text p {
-
   font-size: 18px;
   justify-content: right;
   padding: 0px;
   font-family: 'Orbitron', sans-serif;
   word-spacing: 3px;
-  margin-left: -18px;
+  margin-left: 77px;
   margin-right: 13%;
-
 }
 .container5{
   display: grid;
@@ -592,7 +590,7 @@
 .container2-text h2 {
 
   font-size: 36px;
-  padding: 7px 0px;
+  padding: 7px 25px;
   background: -webkit-linear-gradient(grey, #aaa);
       background-clip: border-box;
   background-clip: border-box;
@@ -708,7 +706,122 @@ grid-gap: 10px;
   margin-top: 12%;
 
 }
+.footer {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 93vh;
+  display: grid;
+  grid-template-columns: auto;
 }
+.footer .contact1 {
+  display: grid;
+  margin-top: -57%;
+}
+  .footer h1 {
+    text-align: center;
+    font-size: 40px;
+    color: grey;
+    margin-bottom: -51%;
+}
+  p{
+    text-align: center;
+    color: #BBBABF;
+    background: -webkit-linear-gradient($background, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  span{
+    display: inline;
+   word-spacing:100px;
+  }
+  .footer a {
+    display: inline;
+    white-space: nowrap;
+    margin-left: 18%;
+    background: none;
+    color: grey;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 40px;
+    height: 28px;
+    padding-top: 60px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+  
+.footer a span {
+  display: inline;
+  margin-left: 100%;
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 35px 15px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  word-spacing: 30px;
+}  
+ //hover effect that makes text pop up styling
+  a:hover span{
+    margin-left:5%;
+    display: inline;
+    visibility: visible;
+    opacity: 1;
+    word-spacing:30px;
+  }
+  
+  
+ //making images inline with one another
+
+ element {
+
+}
+.footer .icon1 {
+
+    list-style-type: none;
+    display: inline;
+
+}
+.footer .icon1 {
+
+    list-style-type: none;
+    display: inline;
+
+}
+.footer img {
+
+    display: inline;
+    margin-left: 100%;
+    width: 90px;
+    padding-left: 40px;
+
+}
+  .icon1{
+    list-style-type: none;
+    display:inline;
+    
+   
+  }
+  .icon1:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.7); 
+  }
+}
+
 @media (min-width: 240px) and (max-width: 320px) {
   html,
   body {

@@ -723,8 +723,71 @@ grid-gap: 10px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 50vh;
-  display: inline;
+  height: 86vh;
+  display: grid;
+}
+.footer h1 {
+
+  text-align: center;
+  font-size: 40px;
+  color: grey;
+
+}
+.footer .contact1 {
+
+  // display: inline-flex;
+  margin-top: -41%;
+  // margin-bottom: -3%;
+  display: grid;
+
+}
+.footer a {
+
+  // display: grid;
+  // white-space: nowrap;
+  margin-left: 14%;
+  background: none;
+  color: grey;
+  border-radius: 100%;
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 40px;
+  height: 38px;
+  padding-top: 95px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+
+}
+.footer a span {
+
+    display: inline;
+    margin-left: 100%;
+    color: grey;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 65px -6px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    word-spacing: 30px;
+    // margin-top: -21%;
+    top: 29%;
+
+}
+.footer .icon1 {
+
+  list-style-type: none;
+  display: grid;
+
+
 }
 }
 @media (min-width: 240px) and (max-width: 320px) {

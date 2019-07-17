@@ -1,7 +1,8 @@
 # portfolio-2
 Live Link:
 ```
-> https://ashtonenglish3.github.io/jon-chreiten/index.html
+> https://ashtonenglish3.github.io/portfolio-2/index.html
+
 ```
 
 ## Styles used

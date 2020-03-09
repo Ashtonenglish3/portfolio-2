@@ -312,7 +312,7 @@ h1, h2, h3 {
   background-position: center;
   background-attachment: fixed;
   height: 50vh;
-  display: inline; }
+  display: inherit; }
   .footer .contact1 {
     display: inline-flex; }
   .footer h1 {
@@ -560,11 +560,11 @@ footer li img img:hover {
     font-family: poppins; }
     .container5 .sub-section {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto auto auto;
       grid-gap: 10px; }
 
   .container5 .hover-image {
-    max-width: 680px;
+    max-width: 505px;
     box-shadow: 10px 10px 5px #2C3952; } }
 /* 
   ##Device = Laptops, Desktops
